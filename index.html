@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>jQuery doubleTap plugin</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-doubleTap.js"></script>
+		<style type="text/css">
+			#doubleTap-test {
+				width: 60px;
+				height: 60px;
+				position: absolute;
+				left: 50px;
+				top: 50px;
+				cursor: pointer;
+				background: #0f0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="doubleTap-test"></div>
+		<script type="text/javascript">
+			$("#doubleTap-test").doubleTap(function(){
+				$("#doubleTap-test").css("background","#f00");
+			});
+		</script>
+	</body>
+</html>
