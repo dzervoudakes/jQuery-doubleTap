@@ -3,7 +3,7 @@
  * 
  * Custom jQuery event method for double-tapping and double-clicking
  * 
- * Copyright (c) 2014, 2015 Dan Zervoudakes
+ * Copyright (c) 2015 Dan Zervoudakes
  * Released under the MIT license
  */
 
