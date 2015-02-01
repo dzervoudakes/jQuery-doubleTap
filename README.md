@@ -1,4 +1,4 @@
-# jQuery-DoubleTap
+# jQuery-doubleTap
 
 Custom doubleTap/doubleClick plugin for jQuery.
 
