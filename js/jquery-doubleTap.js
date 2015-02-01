@@ -1,7 +1,7 @@
 /**
- * jQuery doubleTap plugin
+ * jQuery doubleTap() plugin
  * 
- * Custom jQuery event method for double-tapping and double-clicking
+ * Custom jQuery event method that triggers a callback after double-tapping/double-clicking on the selected DOM element
  * 
  * Copyright (c) 2015 Dan Zervoudakes
  * Released under the MIT license
