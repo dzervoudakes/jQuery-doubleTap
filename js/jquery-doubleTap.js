@@ -8,25 +8,33 @@
  */
 
 	(function($){
+		
 		$.fn.doubleTap = function(_callback){
 			
-			var active = false;
-			var interaction = ("createTouch" in document) ? "touchend" : "click";
+			var active, interaction;
+			
+			active = false;
+			interaction = ("createTouch" in document) ? "touchend" : "click";
 			
 			if (_callback){
+				
 				$(this).on(interaction,function(){
+					
 					if (active){
 						_callback();
 						active = false;
 					}
+					
 					active = true;
+					
 					setTimeout(function(){
 						active = false;
-					},360);
+					}, 350);
+					
 				});
 				
 			} else {
-				throw new Error("Double-tap/double-click callback is undefined.");
+				throw new Error("jQuery double-tap/double-click callback is undefined.");
 			}
 			
 			return this;
