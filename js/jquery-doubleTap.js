@@ -1,10 +1,12 @@
 /**
  * jQuery doubleTap() plugin
+ * https://github.com/DanZiti/jQuery-doubleTap
  * 
  * Custom jQuery event method that triggers a callback after double-tapping/double-clicking on the selected DOM element
  * 
  * Copyright (c) 2015 Dan Zervoudakes
  * Released under the MIT license
+ * https://github.com/DanZiti/jQuery-doubleTap/blob/master/LICENSE
  */
 
 	(function($){
