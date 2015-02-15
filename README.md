@@ -6,7 +6,7 @@ Custom doubleTap plugin for jQuery. (Calling the doubleTap() method also handles
 
 ```
 $("#doubleTap-test").doubleTap(function(){
-	$("#doubleTap-test").css("background","#f00");
+	$("#doubleTap-test").css("background", "#f00");
 });
 ```
 
