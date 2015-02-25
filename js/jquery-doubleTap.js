@@ -20,11 +20,11 @@
 			
 			if (_callback){
 				
-				$(this).on(interaction,function(){
+				$(this).on(interaction, function(){
 					
 					if (active){
 						_callback();
-						active = false;
+						return active = false;
 					}
 					
 					active = true;
