@@ -9,27 +9,27 @@
  * https://github.com/DanZiti/jQuery-doubleTap/blob/master/LICENSE
  */
 
-	(function($){
+	(function($) {
 		
-		$.fn.doubleTap = function(_callback){
+		$.fn.doubleTap = function(_callback) {
 			
 			var active, interaction;
 			
 			active = false;
 			interaction = ("createTouch" in document) ? "touchend" : "click";
 			
-			if (_callback){
+			if (_callback) {
 				
-				$(this).on(interaction, function(){
+				$(this).on(interaction, function() {
 					
-					if (active){
+					if (active) {
 						_callback();
 						return active = false;
 					}
 					
 					active = true;
 					
-					setTimeout(function(){
+					setTimeout(function() {
 						active = false;
 					}, 350);
 					
