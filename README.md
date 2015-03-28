@@ -1,8 +1,8 @@
 # jQuery-doubleTap
 
-Custom doubleTap plugin for jQuery. (Calling the doubleTap() method also handles double-clicking on desktop)
+_A useful double-tap/double-click plugin for jQuery._
 
-#####Example:
+##### Example:
 
 ```
 $("#doubleTap-test").doubleTap(function() {
