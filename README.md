@@ -5,8 +5,8 @@ _A useful double-tap/double-click plugin for jQuery._
 ##### Example:
 
 ```
-$("#doubleTap-test").doubleTap(function() {
-	$("#doubleTap-test").css("background", "#f00");
+$("selector").doubleTap(function() {
+	$("selector").css("background", "#f00");
 });
 ```
 

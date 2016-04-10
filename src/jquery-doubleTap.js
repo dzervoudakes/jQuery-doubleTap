@@ -1,27 +1,27 @@
 /**
  * jQuery doubleTap() plugin
- * https://github.com/DanZiti/jQuery-doubleTap
+ * https://github.com/dzervoudakes/jQuery-doubleTap
  * 
  * Custom jQuery event method that triggers a callback after double-tapping/double-clicking on the selected DOM element
  * 
- * Copyright (c) 2015 Dan Zervoudakes
+ * Copyright (c) 2015-2016 Dan Zervoudakes
  * Released under the MIT license
- * https://github.com/DanZiti/jQuery-doubleTap/blob/master/LICENSE
+ * https://github.com/dzervoudakes/jQuery-doubleTap/blob/master/LICENSE
  */
 
 (function($) {
 	
-	$.fn.doubleTap = function(_callback) {
+	$.fn.doubleTap = function(callback) {
 		
 		var active, interaction;
 		
 		active = false;
-		interaction = ("createTouch" in document) ? "touchend" : "click";
+		interaction = ("ontouchend" in document) ? "touchend" : "click";
 			
 		$(this).on(interaction, function() {
 			
 			if (active) {
-				_callback();
+				callback();
 				return active = false;
 			}
 			
