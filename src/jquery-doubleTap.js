@@ -16,7 +16,7 @@
 		var active, interaction;
 		
 		active = false;
-		interaction = ('ontouchend' in document) ? 'touchend' : 'click';
+		interaction = 'ontouchend' in document ? 'touchend' : 'click';
 			
 		$(this).on(interaction, function() {
 			
